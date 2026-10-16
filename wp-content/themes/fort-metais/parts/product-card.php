@@ -1,0 +1,6 @@
+<?php $product_id = get_the_ID(); $finish = fort_term_name($product_id, 'fort_acabamento'); ?>
+<article class="product-card"><a class="product-image" href="<?php the_permalink(); ?>" aria-label="<?php echo esc_attr('Ver ' . get_the_title()); ?>">
+<?php if (get_post_meta($product_id, '_fort_lancamento', true) === '1'): ?><span class="product-tag">Lançamento</span><?php endif; ?>
+<?php if (has_post_thumbnail()): the_post_thumbnail('large', array('loading' => 'lazy')); else: ?><div class="product-placeholder"><?php echo fort_icon('shield'); ?><span>Foto em breve</span></div><?php endif; ?>
+<span class="card-arrow"><?php echo fort_icon('external'); ?></span></a>
+<div class="product-info"><div class="product-meta"><span><?php echo esc_html(fort_term_name($product_id, 'fort_linha')); ?></span><?php if ($finish): ?><span class="finish-dot finish-<?php echo esc_attr(sanitize_title($finish)); ?>" aria-label="<?php echo esc_attr('Acabamento ' . $finish); ?>" title="<?php echo esc_attr($finish); ?>"></span><?php endif; ?></div><h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3><a class="product-detail" href="<?php the_permalink(); ?>">Ver Detalhes <?php echo fort_icon('chevron'); ?></a></div></article>

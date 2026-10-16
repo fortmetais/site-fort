@@ -1,0 +1,15 @@
+{
+  "tool": "image_gen.imagegen",
+  "purpose": "Simulações de acabamento para testar o seletor de cores do produto local 9",
+  "source": "wp-content/themes/fort-metais/assets/images/produto-black-alta.jpg",
+  "original_preserved": true,
+  "prompt_base": "Edit this exact product photograph; keep exact faucet design, geometry, position, proportions, camera angle, silhouette and background. Tall circular riser on RIGHT rises from a round countertop base, curves at top and extends horizontally LEFT to a cylindrical valve/nozzle assembly. That assembly has a small straight horizontal lever pointing LEFT near its top. No added handle, no spout redesign. Preserve circular sections, junctions, all hardware, black aerator at nozzle where appropriate. Change ONLY the metal surface finish as described. White background, same studio lighting, same full-product framing with margins; PORTRAIT 5:6 composition matching source, entire faucet visible at same relative scale. High resolution product catalog photograph. No text, logos, watermarks, scene or props.",
+  "outputs": [
+    { "finish": "Cromado", "description": "Silver polished chrome with realistic reflective highlights", "file": "wp-content/themes/fort-metais/assets/images/variacoes-opala/cromado.jpg", "media_id": 67, "simulation": true },
+    { "finish": "Aço Corten", "description": "Dark warm satin brown, smooth muted finish around #755548", "file": "wp-content/themes/fort-metais/assets/images/variacoes-opala/aco-corten.jpg", "media_id": 68, "simulation": true },
+    { "finish": "Rose", "description": "Warm satin peach copper around #c28a68", "file": "wp-content/themes/fort-metais/assets/images/variacoes-opala/rose.jpg", "media_id": 69, "simulation": true },
+    { "finish": "Grafite", "description": "Mid dark gunmetal around #5e6369, visibly lighter than Black", "file": "wp-content/themes/fort-metais/assets/images/variacoes-opala/grafite.jpg", "media_id": 70, "simulation": true }
+  ],
+  "delivery": "JPEG quality 90, portrait 5:6, copied to theme assets and uploaded to the local WordPress media library",
+  "availability": "Unconfirmed. These images are visual tests, not official product finish photographs."
+}

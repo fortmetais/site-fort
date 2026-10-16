@@ -1,0 +1,18 @@
+.fort-language-switcher { position: relative; flex: none; }
+.fort-language-switcher details { position: relative; }
+.fort-language-switcher summary { display: flex; align-items: center; justify-content: center; gap: 6px; min-height: 42px; padding: 8px 10px; border: 1px solid #e2e8f0; border-radius: 999px; color: #334155; background: #fff; font-size: 12px; font-weight: 600; cursor: pointer; list-style: none; white-space: nowrap; }
+.fort-language-switcher summary::-webkit-details-marker { display: none; }
+.fort-language-switcher summary>.icon:first-child { width: 17px; height: 17px; }
+.fort-language-switcher summary>.icon:last-child { width: 12px; height: 12px; transform: rotate(90deg); }
+.fort-language-switcher details[open] summary { border-color: #2563eb; background: #eff6ff; color: #1d4ed8; }
+.fort-language-switcher summary:focus-visible { outline: 3px solid #2563eb; outline-offset: 3px; }
+.fort-language-switcher ul { position: absolute; top: calc(100% + 10px); right: 0; min-width: 174px; padding: 6px; margin: 0; list-style: none; background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; box-shadow: 0 12px 28px #0f172a1a; z-index: 110; }
+.fort-language-switcher li+li { margin-top: 2px; }
+.fort-language-switcher a { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 12px; border-radius: 9px; font-size: 13px; color: #334155; }
+.fort-language-switcher a:hover, .fort-language-switcher a[aria-current="true"] { color: #1d4ed8; background: #eff6ff; }
+.fort-language-switcher a .icon { width: 16px; height: 16px; }
+.reference-header .header-inner { gap: 24px; }
+.reference-header .header-actions { gap: 10px; }
+@media (min-width: 768px) and (max-width: 1279px) { .reference-header .reference-inline-search { display: none; } .reference-header .search-toggle { display: grid; } .reference-header .main-nav { gap: 22px; } }
+@media (max-width: 767px) { .reference-header .header-actions { gap: 2px; } .reference-header .header-inner { gap: 10px; } .fort-language-switcher summary { padding-inline: 7px; gap: 4px; font-size: 11px; } .fort-language-switcher ul { right: -62px; } }
+@media (max-width: 359px) { .reference-header .brand, .reference-header .brand img { width: 108px; } .fort-language-switcher summary>.icon:first-child { display: none; } }

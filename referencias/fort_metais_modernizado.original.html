@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fort Metais | Inovação e Qualidade</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Efeito suave ao carregar imagens */
+        img {
+            transition: opacity 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased overflow-x-hidden">
+
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logotipo (Substituir pela imagem real da Fort Metais posteriormente) -->
+                <div class="flex-shrink-0 flex items-center cursor-pointer">
+                    <span class="text-2xl font-black tracking-tighter text-slate-900 uppercase">
+                        Fort<span class="text-blue-600">Metais</span>
+                    </span>
+                </div>
+
+                <!-- Menu de Navegação Desktop -->
+                <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#institucional" class="hover:text-blue-600 transition-colors">Institucional</a>
+                    <a href="#linhas" class="hover:text-blue-600 transition-colors">Produtos</a>
+                    <a href="#" class="hover:text-blue-600 transition-colors">Ambientes</a>
+                    <a href="#contactos" class="hover:text-blue-600 transition-colors">Representantes</a>
+                </nav>
+
+                <!-- Barra de Pesquisa e Ações -->
+                <div class="flex items-center space-x-4">
+                    <div class="hidden lg:flex items-center bg-slate-100 rounded-full px-4 py-2 border border-transparent focus-within:border-blue-300 focus-within:bg-white transition-all">
+                        <i data-lucide="search" class="w-4 h-4 text-slate-400"></i>
+                        <input type="text" placeholder="Ex: banheiro, torneira..." class="bg-transparent border-none focus:outline-none ml-2 text-sm w-48 text-slate-700 placeholder-slate-400">
+                    </div>
+                    
+                    <!-- Botão Menu Mobile -->
+                    <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-blue-600 transition-colors focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Mobile (Oculto por defeito) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 absolute w-full shadow-lg">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="#institucional" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50">Institucional</a>
+                <a href="#linhas" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50">Produtos</a>
+                <a href="#" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50">Ambientes</a>
+                <a href="#contactos" class="block px-3 py-3 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50">Representantes</a>
+                <div class="mt-4 px-3">
+                    <div class="flex items-center bg-slate-100 rounded-full px-4 py-2">
+                        <i data-lucide="search" class="w-4 h-4 text-slate-400"></i>
+                        <input type="text" placeholder="Pesquisar..." class="bg-transparent border-none focus:outline-none ml-2 text-sm w-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECÇÃO HERO PRINCIPAL -->
+    <section class="relative w-full h-[90vh] min-h-[600px] flex items-center justify-center bg-slate-900 overflow-hidden pt-20">
+        <!-- Imagem de Fundo (Placeholder de alta qualidade simulando um ambiente premium) -->
+        <img 
+            src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&q=80&w=2000" 
+            alt="Ambiente sofisticado com metais sanitários" 
+            class="absolute inset-0 w-full h-full object-cover opacity-50"
+            onerror="this.src='https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=2000'"
+        >
+        
+        <div class="relative z-10 text-center max-w-5xl px-4 sm:px-6 lg:px-8 mt-12">
+            <span class="inline-block py-1 px-3 rounded-full bg-blue-600/20 text-blue-300 text-sm font-semibold tracking-wider mb-6 backdrop-blur-sm border border-blue-500/30">
+                DESDE 1999
+            </span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight drop-shadow-lg">
+                26 anos a inspirar <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-300">inovação</span> e praticidade.
+            </h1>
+            <p class="text-lg md:text-xl text-slate-200 mb-10 max-w-2xl mx-auto drop-shadow-md">
+                Oferecemos produtos em metais com alta qualidade, profissionalismo e confiança, promovendo soluções para a vida e o crescimento sustentável.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#linhas" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-blue-600/30 flex items-center justify-center gap-2">
+                    Ver Lançamentos <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+                <a href="#" class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white px-8 py-4 rounded-full font-semibold transition-all border border-white/30 flex items-center justify-center gap-2">
+                    <i data-lucide="download" class="w-5 h-5"></i> Catálogo Completo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECÇÃO NOSSAS LINHAS (BENTO GRID) -->
+    <section id="linhas" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">Nossas Linhas</h2>
+                <p class="text-slate-500 mt-3 text-lg">Beleza, sofisticação e engenharia em cada detalhe.</p>
+            </div>
+            <a href="#" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition-colors group">
+                Explorar todas as linhas 
+                <i data-lucide="chevron-right" class="w-5 h-5 ml-1 transform group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[320px]">
+            <!-- Card Linha 1 (Largo) -->
+            <div class="md:col-span-8 group relative rounded-3xl overflow-hidden bg-slate-900 cursor-pointer shadow-md">
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1200" alt="Linha Opala Black" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-8 left-8 right-8 flex justify-between items-end">
+                    <div>
+                        <span class="text-blue-400 text-sm font-bold tracking-widest uppercase mb-2 block">Destaque</span>
+                        <h3 class="text-3xl font-bold text-white mb-2">Linha Opala Black</h3>
+                        <p class="text-slate-300">Design moderno e acabamento fosco superior.</p>
+                    </div>
+                    <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+                        <i data-lucide="arrow-up-right" class="text-white w-6 h-6"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card Linha 2 (Quadrado) -->
+            <div class="md:col-span-4 group relative rounded-3xl overflow-hidden bg-slate-900 cursor-pointer shadow-md">
+                <img src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&q=80&w=800" alt="Linha Aço Corten" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-8 left-8 right-8">
+                    <h3 class="text-2xl font-bold text-white mb-2">Linha Aço Corten</h3>
+                    <p class="text-slate-300 text-sm">Estilo industrial sofisticado.</p>
+                </div>
+            </div>
+
+            <!-- Card Linha 3 (Quadrado) -->
+            <div class="md:col-span-4 group relative rounded-3xl overflow-hidden bg-slate-900 cursor-pointer shadow-md">
+                <img src="https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?auto=format&fit=crop&q=80&w=800" alt="Linha Cristal" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-8 left-8 right-8">
+                    <h3 class="text-2xl font-bold text-white mb-2">Linha Cristal</h3>
+                    <p class="text-slate-300 text-sm">O clássico Inox Escovado.</p>
+                </div>
+            </div>
+
+            <!-- Card Linha 4 (Largo) -->
+            <div class="md:col-span-8 group relative rounded-3xl overflow-hidden bg-slate-900 cursor-pointer shadow-md">
+                <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&q=80&w=1200" alt="Linha Rose" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+                <div class="absolute bottom-8 left-8 right-8 flex justify-between items-end">
+                    <div>
+                        <h3 class="text-3xl font-bold text-white mb-2">Linha Opala Rose</h3>
+                        <p class="text-slate-300">Elegância e tons quentes para ambientes exclusivos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECÇÃO PRODUTOS EM DESTAQUE -->
+    <section class="py-24 bg-white border-y border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-4">Produtos em Destaque</h2>
+                <p class="text-slate-500 text-lg">Descubra as peças mais procuradas pelos arquitetos e designers de interiores este ano.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Produto 1 -->
+                <div class="group cursor-pointer flex flex-col">
+                    <div class="bg-slate-50 aspect-[4/5] rounded-2xl flex items-center justify-center p-8 mb-5 transition-all duration-300 group-hover:bg-slate-100 relative overflow-hidden">
+                        <!-- Botão de acção rápida ao passar o rato -->
+                        <div class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-sm opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
+                            <i data-lucide="heart" class="w-5 h-5 text-slate-400 hover:text-red-500 transition-colors"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&q=80&w=600" alt="Torneira Black" class="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-grow">
+                        <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider mb-2">Opala Black</span>
+                        <h4 class="text-base font-semibold text-slate-800 leading-snug mb-3">Torneira Bancada Black Fixa Cuba Arejador 1/4 de Volta</h4>
+                        <div class="mt-auto flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">
+                            Ver Detalhes <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 2 -->
+                <div class="group cursor-pointer flex flex-col">
+                    <div class="bg-slate-50 aspect-[4/5] rounded-2xl flex items-center justify-center p-8 mb-5 transition-all duration-300 group-hover:bg-slate-100 relative overflow-hidden">
+                         <div class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-sm opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
+                            <i data-lucide="heart" class="w-5 h-5 text-slate-400 hover:text-red-500 transition-colors"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&q=80&w=600" alt="Torneira Rose" class="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-grow">
+                        <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider mb-2">Opala Rose</span>
+                        <h4 class="text-base font-semibold text-slate-800 leading-snug mb-3">Torneira Bancada Rose Fixa Cuba Arejador 1/4 de Volta</h4>
+                        <div class="mt-auto flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">
+                            Ver Detalhes <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 3 -->
+                <div class="group cursor-pointer flex flex-col">
+                    <div class="bg-slate-50 aspect-[4/5] rounded-2xl flex items-center justify-center p-8 mb-5 transition-all duration-300 group-hover:bg-slate-100 relative overflow-hidden">
+                         <div class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-sm opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
+                            <i data-lucide="heart" class="w-5 h-5 text-slate-400 hover:text-red-500 transition-colors"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?auto=format&fit=crop&q=80&w=600" alt="Torneira Ametista" class="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-grow">
+                        <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider mb-2">Ametista</span>
+                        <h4 class="text-base font-semibold text-slate-800 leading-snug mb-3">Torneira Parede Móvel Cuba com Arejador Articulado</h4>
+                        <div class="mt-auto flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">
+                            Ver Detalhes <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produto 4 -->
+                <div class="group cursor-pointer flex flex-col">
+                    <div class="bg-slate-50 aspect-[4/5] rounded-2xl flex items-center justify-center p-8 mb-5 transition-all duration-300 group-hover:bg-slate-100 relative overflow-hidden">
+                         <div class="absolute top-4 right-4 bg-white p-2 rounded-full shadow-sm opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
+                            <i data-lucide="heart" class="w-5 h-5 text-slate-400 hover:text-red-500 transition-colors"></i>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&q=80&w=600" alt="Torneira Corten" class="w-full h-full object-contain mix-blend-multiply group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="flex flex-col flex-grow">
+                        <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider mb-2">Aço Corten</span>
+                        <h4 class="text-base font-semibold text-slate-800 leading-snug mb-3">Torneira Bancada Aço Corten Fixa Cuba</h4>
+                        <div class="mt-auto flex items-center text-blue-600 font-medium group-hover:text-blue-800 transition-colors">
+                            Ver Detalhes <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="mt-16 text-center">
+                <button class="bg-slate-900 hover:bg-slate-800 text-white px-8 py-3 rounded-full font-medium transition-colors inline-flex items-center gap-2">
+                    Ver todos os produtos <i data-lucide="grid-2x2" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECÇÃO INSTITUCIONAL BREVE -->
+    <section id="institucional" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Conte com quem tem experiência no ramo</h2>
+                    <p class="text-slate-300 text-lg leading-relaxed mb-8">
+                        Desde 1999, a marca Fort atua com dedicação e zelo, priorizando as relações comerciais, sociais e ambientais. Com uma ampla linha de produtos inovadores, investimos continuamente em tecnologia para garantir qualidade, durabilidade e um design excecional.
+                    </p>
+                    <div class="flex gap-4">
+                        <div class="flex flex-col items-center p-4 bg-slate-800 rounded-xl">
+                            <i data-lucide="shield-check" class="w-8 h-8 text-blue-400 mb-2"></i>
+                            <span class="text-sm font-medium">Garantia</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 bg-slate-800 rounded-xl">
+                            <i data-lucide="leaf" class="w-8 h-8 text-green-400 mb-2"></i>
+                            <span class="text-sm font-medium">Sustentável</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 bg-slate-800 rounded-xl">
+                            <i data-lucide="award" class="w-8 h-8 text-yellow-400 mb-2"></i>
+                            <span class="text-sm font-medium">Qualidade</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&q=80&w=1000" alt="Processo de fabricação" class="rounded-2xl shadow-2xl opacity-90">
+                    <div class="absolute -bottom-6 -left-6 bg-blue-600 p-8 rounded-2xl shadow-xl hidden sm:block">
+                        <span class="block text-4xl font-black mb-1">+20</span>
+                        <span class="text-sm font-medium text-blue-100 uppercase tracking-widest">Anos de História</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ (FOOTER) -->
+    <footer id="contactos" class="bg-slate-950 text-slate-300 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <!-- Coluna 1: Marca -->
+            <div>
+                <div class="text-2xl font-black tracking-tighter text-white mb-6 uppercase">
+                    Fort<span class="text-blue-500">Metais</span>
+                </div>
+                <p class="text-sm leading-relaxed mb-8 text-slate-400">
+                    Priorizando as relações comerciais, sociais e ambientais desde 1999 com excelência em metais sanitários.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 transition-colors">
+                        <i data-lucide="facebook" class="w-5 h-5 text-white"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 transition-colors">
+                        <i data-lucide="instagram" class="w-5 h-5 text-white"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-blue-600 transition-colors">
+                        <i data-lucide="linkedin" class="w-5 h-5 text-white"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Coluna 2: Links Úteis -->
+            <div>
+                <h5 class="text-white font-bold mb-6 text-lg">Acessos Rápidos</h5>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#" class="hover:text-blue-400 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> Portal Fundição</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> App Fundição</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> Baixar Catálogo</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition-colors flex items-center gap-2"><i data-lucide="chevron-right" class="w-4 h-4"></i> Trabalhe Connosco</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 3: Contactos -->
+            <div>
+                <h5 class="text-white font-bold mb-6 text-lg">Contactos</h5>
+                <ul class="space-y-4 text-sm text-slate-400">
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="phone" class="w-5 h-5 text-blue-500 mt-0.5"></i> 
+                        <div>
+                            <span class="block text-white font-medium">Telefone</span>
+                            (44) 3425-8600
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="mail" class="w-5 h-5 text-blue-500 mt-0.5"></i> 
+                        <div>
+                            <span class="block text-white font-medium">E-mail</span>
+                            contato@fortmetais.com.br
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-blue-500 mt-0.5"></i> 
+                        <div>
+                            <span class="block text-white font-medium">Representantes</span>
+                            <a href="#" class="text-blue-400 hover:underline">Encontre o mais próximo</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Coluna 4: Newsletter / CTA -->
+            <div>
+                <h5 class="text-white font-bold mb-6 text-lg">Fale Connosco</h5>
+                <p class="text-sm text-slate-400 mb-4">Tem um projeto em mente? A nossa equipa de especialistas está pronta para ajudar.</p>
+                <button class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-colors flex justify-center items-center gap-2">
+                    <i data-lucide="message-square" class="w-5 h-5"></i> Iniciar Conversa
+                </button>
+            </div>
+        </div>
+        
+        <div class="border-t border-slate-800 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-xs text-slate-500">
+            <p>Copyrights © 2024 Fort Metais | Todos os direitos reservados.</p>
+            <p class="mt-2 md:mt-0">Design Modernizado - Conceito</p>
+        </div>
+    </footer>
+
+    <!-- Scripts de Interação -->
+    <script>
+        // Inicializar ícones Lucide
+        lucide.createIcons();
+
+        // Lógica do Menu Mobile
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Efeito de sombra na Navbar ao fazer scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add('shadow-md');
+                navbar.classList.remove('shadow-sm');
+            } else {
+                navbar.classList.remove('shadow-md');
+                navbar.classList.add('shadow-sm');
+            }
+        });
+    </script>
+</body>
+</html>

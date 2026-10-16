@@ -1,0 +1,25 @@
+{
+  "destino": "WordPress local — biblioteca de mídia",
+  "arquivos_preservados_sem_alteracao": true,
+  "catalogos": [
+    {
+      "idioma": "pt-br",
+      "origem": "C:/Users/fortm/Downloads/Catalogo 2024 fort.pdf",
+      "media_id": 76,
+      "url_local": "http://localhost:8080/wp-content/uploads/2026/10/Catalogo-2024-fort.pdf",
+      "paginas": 124,
+      "bytes": 35586756,
+      "sha256": "cc018f5c1a6ad66d6b7f3a9009faebd619760d3d440650be5bdc3bb18d62d244"
+    },
+    {
+      "idioma": "en",
+      "origem": "C:/Users/fortm/Downloads/Catálogo Fort Inglês.pdf",
+      "media_id": 78,
+      "url_local": "http://localhost:8080/wp-content/uploads/2026/10/Catalogo-Fort-Ingles.pdf",
+      "paginas": 124,
+      "bytes": 80430063,
+      "sha256": "9fc57b7458be8baf851decba9d7ab9659582179fc9ea1f5646a3ed5ce3be8ef3"
+    }
+  ],
+  "espanhol": "Sem PDF próprio; utiliza o arquivo em português com identificação do idioma."
+}

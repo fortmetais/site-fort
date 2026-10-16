@@ -1,0 +1,71 @@
+.reference-presentation .fort-environment-gallery,
+.reference-presentation .fort-scene-detail { padding-top: 48px; }
+.fort-environment-filters { display: flex; align-items: flex-end; flex-wrap: wrap; gap: 20px; padding: 24px; border: 1px solid #e2e8f0; border-radius: 16px; background: #fff; }
+.fort-environment-filters>div { flex: 1 1 220px; }
+.fort-environment-filters label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+.fort-environment-filters select { width: 100%; min-height: 52px; border: 1px solid #cbd5e1; border-radius: 10px; padding: 12px; background: white; color: #334155; }
+.fort-environment-filters>.text-link { align-self: center; }
+.fort-environment-summary { margin: 32px 0; }
+.fort-environment-summary p { font-size: 15px; margin: 0; }
+.fort-environment-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 56px 32px; }
+.fort-environment-photo { display: block; position: relative; aspect-ratio: 3/2; border-radius: 20px; overflow: hidden; background: #e2e8f0; }
+.fort-environment-photo>img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
+.fort-environment-photo:hover>img { transform: scale(1.025); }
+.fort-environment-photo>span:not(.fort-environment-explore) { display: grid; place-items: center; height: 100%; }
+.fort-environment-explore { position: absolute; right: 20px; bottom: 20px; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; color: #0f172a; background: #fffffff2; box-shadow: 0 2px 12px #0f172a1a; }
+.fort-environment-caption { padding-top: 24px; }
+.fort-environment-caption h2 { font-size: 27px; font-weight: 700; line-height: 1.25; margin: 12px 0; }
+.fort-environment-caption h2 a:hover { color: #2563eb; }
+.fort-environment-caption>p { font-size: 16px; line-height: 1.8; margin-bottom: 20px; }
+.fort-environment-caption .eyebrow { line-height: 1.7; }
+.fort-scene-layout { display: grid; grid-template-columns: minmax(0, 1.8fr) minmax(300px, 1fr); align-items: start; gap: 40px; }
+.fort-scene-without-items { grid-template-columns: 1fr; max-width: 1080px; margin-inline: auto; }
+.fort-scene-figure { margin: 0; }
+.fort-scene-image { position: relative; }
+.fort-scene-image>img { display: block; width: 100%; height: auto; border-radius: 20px; }
+.fort-scene-figure figcaption { color: #64748b; font-size: 12px; margin-top: 12px; }
+.fort-scene-pin { position: absolute; transform: translate(-50%, -50%); display: grid; place-items: center; width: 36px; height: 36px; background: #fff; color: #1d4ed8; border: 2px solid white; border-radius: 50%; box-shadow: 0 0 0 6px #2563eb40, 0 4px 16px #0f172a40; font-size: 15px; font-weight: 800; z-index: 1; }
+.fort-scene-pin:hover, .fort-scene-pin:focus-visible { background: #2563eb; color: white; }
+.fort-scene-description { margin-top: 28px; }
+.fort-scene-description p { font-size: 16px; line-height: 1.85; }
+.fort-scene-items h2 { font-size: 28px; font-weight: 700; line-height: 1.2; margin: 12px 0 16px; }
+.fort-scene-items .eyebrow { line-height: 1.6; }
+.fort-scene-items-help { font-size: 14px; line-height: 1.7; margin-bottom: 24px; }
+.fort-scene-product-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+.fort-scene-product { display: grid; grid-template-columns: 104px minmax(0, 1fr); align-items: start; gap: 20px; padding: 20px; border: 1px solid #e2e8f0; border-radius: 16px; background: white; scroll-margin-top: 112px; }
+.fort-scene-product:target { outline: 2px solid #2563eb; outline-offset: 3px; }
+.fort-scene-product-image { position: relative; height: 128px; padding: 10px; background: #f8fafc; border-radius: 10px; }
+.fort-scene-product-image img { width: 100%; height: 100%; object-fit: contain; }
+.fort-scene-item-number { position: absolute; left: -6px; top: -6px; width: 26px; height: 26px; display: grid; place-items: center; background: #2563eb; color: white; border-radius: 50%; font-size: 12px; font-weight: 700; }
+.fort-scene-product h3 { font-size: 17px; font-weight: 650; line-height: 1.45; margin: 8px 0 12px; }
+.fort-scene-product .fort-scene-product-code { font-size: 13px; margin-bottom: 12px; }
+.reference-presentation .fort-scene-product .text-link { font-size: 14px; }
+.fort-scene-admin-note { margin-top: 24px; padding: 16px; border: 1px dashed #93c5fd; border-radius: 12px; background: #eff6ff; }
+.fort-scene-admin-note p { font-size: 14px; margin: 0; }
+.fort-scene-admin-note a { text-decoration: underline; color: #1d4ed8; }
+.fort-scene-contact { display: flex; align-items: center; justify-content: space-between; gap: 32px; margin: 56px 0 32px; padding: 40px; border-radius: 20px; background: #0f172a; }
+.fort-scene-contact h2 { color: white; font-size: 28px; font-weight: 650; line-height: 1.25; margin-bottom: 16px; }
+.fort-scene-contact p { color: #cbd5e1; font-size: 16px; margin: 0; }
+.fort-scene-contact .button { flex-shrink: 0; text-align: center; }
+@media (max-width: 1023px) {
+  .fort-scene-layout { grid-template-columns: 1fr; }
+  .fort-scene-items { max-width: 760px; }
+  .fort-scene-contact { align-items: flex-start; flex-direction: column; }
+}
+@media (max-width: 767px) {
+  .reference-presentation .fort-environment-gallery, .reference-presentation .fort-scene-detail { padding-top: 32px; }
+  .fort-environment-grid { grid-template-columns: 1fr; gap: 40px; }
+  .fort-environment-filters { padding: 20px; gap: 16px; }
+  .fort-environment-filters>div { flex-basis: 100%; }
+  .fort-environment-filters>.button { width: 100%; }
+  .fort-environment-photo, .fort-scene-image>img { border-radius: 16px; }
+  .fort-environment-caption h2 { font-size: 25px; }
+  .fort-environment-caption>p { font-size: 15px; }
+  .fort-scene-pin { width: 32px; height: 32px; box-shadow: 0 0 0 4px #2563eb40, 0 4px 12px #0f172a40; }
+  .fort-scene-product { grid-template-columns: 84px minmax(0, 1fr); padding: 16px; gap: 16px; }
+  .fort-scene-product-image { height: 112px; }
+  .fort-scene-contact { padding: 28px 24px; }
+  .fort-scene-contact h2 { font-size: 25px; }
+  .fort-scene-contact .button { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) { .fort-environment-photo>img { transition: none; } }

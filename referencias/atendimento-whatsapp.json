@@ -1,0 +1,19 @@
+{
+  "uso": "Pop-up do botão flutuante de atendimento da Fort Metais",
+  "imagem_original": "C:/Users/fortm/Downloads/8cd5e2a8-1ff2-42bc-a9fb-136bcede85c1.jpg",
+  "imagem_no_projeto": "wp-content/themes/fort-metais/assets/images/mascote-atendimento.png",
+  "ferramenta": "image_gen.imagegen — ferramenta integrada",
+  "modo": "edit",
+  "transparent_background": true,
+  "prompt": "Use case: precise-object-edit / identity-preserve.\nAsset type: transparent full-body brand mascot PNG for the Fort Metais website contact popup.\nEdit target: the supplied image of the elderly friendly Fort Metais male mascot holding a cardboard box.\nPrimary request: remove the cardboard box completely and reconstruct the torso and arms naturally. Keep the SAME recognizable character, face, large black eyeglasses, smiling expression, short silver gray hair, elderly appearance, warm skin, proportions, dark gray short-sleeve polo shirt with its existing small Fort logo, brown/khaki pants, and black shoes. Keep the same polished friendly 3D cartoon illustration style. The character must no longer hold any object. Give him a welcoming natural stance with relaxed arms and one hand slightly open, palm up near waist height; the other hand relaxed beside his body. Both hands anatomically coherent, five fingers, no remnants of the box. Preserve the clothing and character identity carefully; improve detail and smooth edges from the small reference without changing the design.\nComposition: one single full-body mascot, front facing, entirely visible from top of hair to soles, portrait approximately 2:3, centered with small transparent margins. No text, no speech bubble, no added badge or accessories, no props, no box, no backdrop, no floor, no watermark. The speech bubble and text will be implemented separately as HTML on the website.\nBackground must be truly transparent with clean alpha edges, no white rectangular background or baked checkerboard. High-quality crisp cutout suitable for rendering at 130-160px wide on a website.",
+  "referencias_de_interface": [
+    {
+      "url": "https://docs.join.chat/es/joinchat-plugin/configurando-joinchat/",
+      "observacao": "Documentação oficial: botão flutuante, janela com chamada e botão de início do WhatsApp; abertura automática pode ser desativada."
+    },
+    {
+      "url": "https://www.lorenzetti.com.br/contato",
+      "observacao": "Contato no mesmo segmento com canais de WhatsApp e chat. Referência de canais, sem confirmação de pop-up visual."
+    }
+  ]
+}

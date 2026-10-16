@@ -1,0 +1,266 @@
+@font-face {
+  font-family: Inter;
+  src: url("fonts/inter-variable.ttf?v=2") format("truetype");
+  font-style: normal;
+  font-weight: 300 900;
+  font-display: swap;
+}
+
+/* Apresentação baseada no HTML original fornecido pela Fort Metais. */
+:root { --navy: #2563eb; --deep: #0f172a; --ink: #1e293b; --muted: #64748b; --mint: #2563eb; --mint-dark: #2563eb; --line: #e2e8f0; --radius: 16px; }
+body.reference-presentation { font-family: Inter, Arial, sans-serif; font-size: 16px; background: #f8fafc; }
+.reference-presentation .container { width: min(1280px, 100%); padding-inline: 32px; }
+.reference-presentation h1, .reference-presentation h2, .reference-presentation h3 { letter-spacing: -.025em; }
+.reference-presentation .section { padding-block: 96px; }
+.reference-presentation .button { background: #2563eb; border-color: #2563eb; border-radius: 999px; padding: 16px 32px; font-size: 16px; font-weight: 600; gap: 10px; min-height: 56px; }
+.reference-presentation .button:hover { background: #1d4ed8; border-color: #1d4ed8; }
+.reference-presentation .button .icon { width: 20px; height: 20px; }
+.reference-presentation .button-ghost { background: #ffffff1a; border-color: #ffffff4d; color: white; backdrop-filter: blur(8px); }
+.reference-presentation .button-ghost:hover { background: #ffffff33; }
+.reference-presentation .commercial-cta .button-mint { background: #7cc9a7; border-color: #bcebd6; color: #0f172a; }
+.reference-presentation .commercial-cta .button-mint:hover { background: #97dfc6; border-color: #d0f2e2; color: #0f172a; }
+.reference-presentation .commercial-cta .button-mint:active { background: #66b58f; border-color: #bcebd6; color: #0f172a; }
+.reference-presentation .commercial-cta .button-mint:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
+.reference-presentation .button-dark { background: #0f172a; border-color: #0f172a; padding: 12px 32px; min-height: 48px; }
+.reference-presentation .button-dark:hover { background: #1e293b; }
+.reference-presentation .text-link { color: #2563eb; font-size: 16px; gap: 5px; }
+.reference-presentation .text-link:hover { color: #1e40af; }
+.reference-presentation:not(.home) { padding-top: 80px; }
+.reference-presentation .page-intro { padding-block: 32px 48px; }
+.reference-presentation .page-intro h1 { font-weight: 700; }
+.reference-presentation .product-copy>.button, .reference-presentation .contact-form>.button { font-size: 14px; }
+
+.reference-header.site-header { position: fixed; inset: 0 0 auto; background: #fffffff2; border: 0; box-shadow: 0 1px 5px #0f172a12; backdrop-filter: blur(12px); }
+.reference-header .header-inner { height: 80px; gap: 32px; }
+.reference-header .brand { width: 136px; height: 58px; }
+.reference-header .brand img { width: 136px; }
+.reference-header .main-nav { position: static; display: flex; flex-direction: row; align-items: center; gap: 32px; margin-inline: auto; padding: 0; box-shadow: none; border: 0; background: none; }
+.reference-header .main-nav a { color: #475569; font-size: 14px; padding-block: 16px; font-weight: 500; }
+.reference-header .main-nav a:after { display: none; }
+.reference-header .main-nav a:hover { color: #2563eb; }
+.reference-header .header-actions { gap: 12px; }
+.reference-inline-search { display: flex; align-items: center; background: #f1f5f9; border: 1px solid transparent; border-radius: 999px; padding: 7px 13px; }
+.reference-inline-search:focus-within { background: white; border-color: #93c5fd; }
+.reference-inline-search input { border: 0; background: transparent; padding: 0 0 0 9px; min-height: 24px; width: 195px; font-size: 13px; }
+.reference-inline-search input:focus-visible { outline: none; }
+.reference-inline-search button { display: grid; place-items: center; border: 0; padding: 0; background: none; color: #94a3b8; }
+.reference-inline-search .icon { width: 16px; height: 16px; }
+.reference-header .search-toggle, .reference-header .menu-toggle { display: none; }
+.reference-header .header-search { background: #fff; }
+.screen-reader-text { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+
+.reference-hero { position: relative; height: 90vh; min-height: 600px; display: flex; align-items: center; justify-content: center; overflow: hidden; padding-top: 80px; background: #0f172a; }
+.reference-hero-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: .5; }
+.reference-hero-content { position: relative; z-index: 1; text-align: center; margin-top: 48px; max-width: 1024px; }
+.reference-hero h1 { font-size: 72px; line-height: 1.25; font-weight: 800; color: white; margin: 0 auto 24px; text-shadow: 0 4px 6px #0002; }
+.reference-gradient { background: linear-gradient(90deg, #60a5fa, #5eead4); color: transparent; -webkit-background-clip: text; background-clip: text; text-shadow: none; }
+.reference-hero-content>p { font-size: 20px; line-height: 1.4; color: #e2e8f0; max-width: 672px; margin: 0 auto 40px; text-shadow: 0 4px 6px #0002; }
+.reference-hero .button-row { justify-content: center; gap: 16px; }
+.reference-hero .button:first-child { box-shadow: 0 8px 20px #0002; }
+
+.reference-home .section-heading { margin-bottom: 48px; align-items: flex-end; gap: 16px; }
+.reference-home .section-heading h2 { font-size: 36px; line-height: 1.1; font-weight: 700; margin-bottom: 12px; color: #0f172a; }
+.reference-home .section-heading p { font-size: 18px; line-height: 1.55; color: #64748b; margin: 0; }
+.reference-home .section-heading>.text-link { margin: 0; }
+.reference-lines-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-auto-rows: 320px; gap: 24px; }
+.reference-line { grid-column: span 4; position: relative; overflow: hidden; border-radius: 24px; background: #0f172a; box-shadow: 0 4px 6px #0000001a; color: white; }
+.reference-line-wide { grid-column: span 8; }
+.reference-line>img { width: 100%; height: 100%; object-fit: cover; opacity: .8; transition: transform .7s, opacity .7s; }
+.reference-line:hover>img { transform: scale(1.05); opacity: 1; }
+.reference-line:after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, #000e 0%, #0003 45%, transparent 100%); pointer-events: none; }
+.reference-line-content { position: absolute; bottom: 32px; left: 32px; right: 32px; z-index: 1; }
+.reference-line-content>span { display: block; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: #60a5fa; margin-bottom: 8px; }
+.reference-line h3 { font-size: 24px; font-weight: 700; margin: 0 0 8px; }
+.reference-line-wide h3 { font-size: 30px; }
+.reference-line p { font-size: 14px; line-height: 1.5; color: #cbd5e1; margin: 0; }
+.reference-line-wide p { font-size: 16px; }
+.reference-line .round-arrow { position: absolute; right: 32px; bottom: 32px; z-index: 2; width: 48px; height: 48px; border: 0; background: #ffffff33; backdrop-filter: blur(10px); }
+.reference-line:first-child .reference-line-content { right: 100px; }
+.reference-line:hover .round-arrow { background: #2563eb; }
+
+.reference-products.products-section { background: #fff; border-block: 1px solid #f1f5f9; }
+.reference-products .section-heading { display: block; text-align: center; max-width: 768px; margin: 0 auto 64px; }
+.reference-products .section-heading h2 { margin-bottom: 16px; }
+.reference-presentation .product-grid { gap: 32px; }
+.reference-presentation .product-image { border: 0; background: #f8fafc; aspect-ratio: 4/5; border-radius: 16px; padding: 32px; }
+.reference-presentation .product-image:hover { background: #f1f5f9; }
+.reference-presentation .product-image img { transition: transform .5s; }
+.reference-presentation .product-card:hover .product-image img { transform: scale(1.1); }
+.reference-presentation .card-arrow { background: #fff; width: 34px; height: 34px; bottom: 15px; right: 15px; color: #2563eb; opacity: 0; transition: opacity .2s; }
+.reference-presentation .product-card:hover .card-arrow, .reference-presentation .product-card:focus-within .card-arrow { opacity: 1; }
+.reference-presentation .product-info { padding-top: 20px; }
+.reference-presentation .product-meta { color: #94a3b8; font-size: 12px; font-weight: 600; letter-spacing: .05em; margin-bottom: 8px; }
+.reference-presentation .product-info h3 { font-size: 16px; line-height: 1.4; font-weight: 600; margin-bottom: 12px; min-height: 46px; color: #1e293b; }
+.reference-presentation .product-detail { font-size: 15px; font-weight: 500; color: #2563eb; gap: 5px; }
+.reference-all-products { margin-top: 64px; text-align: center; }
+
+.reference-institutional { background: #0f172a; color: white; padding-block: 80px; }
+.reference-institutional-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px; align-items: center; }
+.reference-institutional h2 { font-size: 30px; font-weight: 700; line-height: 1.2; margin-bottom: 24px; }
+.reference-institutional-copy>p { font-size: 18px; line-height: 1.65; color: #cbd5e1; margin-bottom: 32px; }
+.reference-values { display: flex; gap: 16px; margin-bottom: 24px; }
+.reference-values>div { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 16px; border-radius: 12px; background: #1e293b; font-size: 14px; font-weight: 500; }
+.reference-values .icon { width: 32px; height: 32px; color: #60a5fa; }
+.reference-values>div:nth-child(2) .icon { color: #4ade80; }
+.reference-values>div:nth-child(3) .icon { color: #facc15; }
+.reference-institutional .text-link { color: #93c5fd; font-size: 14px; }
+.fort-commitments { background: #f8fafc; }
+.fort-commitments-heading { text-align: center; margin-bottom: 48px; }
+.fort-commitments-heading h2 { font-size: clamp(28px, 3vw, 40px); font-weight: 800; text-transform: uppercase; color: #0f172a; line-height: 1.2; margin: 0; }
+.fort-commitments-heading h2::after { content: ''; display: block; width: 48px; height: 3px; background: #2563eb; margin: 20px auto 16px; border-radius: 2px; }
+.fort-commitments-heading p { margin: 0; color: #64748b; font-size: 15px; }
+.fort-commitments-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; max-width: 1080px; margin: 0 auto; }
+.fort-commitment-card { padding: 40px; border: 1px solid #e2e8f0; border-radius: 16px; background: #fff; box-shadow: 0 6px 20px #0f172a08; color: #334155; }
+.fort-commitment-icon { color: #2563eb; margin-bottom: 24px; }
+.fort-commitment-icon .icon { width: 48px; height: 48px; }
+.fort-commitment-card h3 { font-size: 26px; font-weight: 700; color: #0f172a; margin: 0 0 24px; }
+.fort-commitment-card p, .fort-commitment-card ul { font-size: 16px; line-height: 1.85; margin: 0; }
+.fort-commitment-card ul { list-style-type: disc; padding-left: 24px; }
+.fort-commitment-featured { background: #2563eb; border-color: #2563eb; color: #fff; }
+.fort-commitment-featured h3, .fort-commitment-featured .fort-commitment-icon { color: #fff; }
+.fort-commitment-featured p { color: #fff; }
+.fort-commitments { scroll-margin-top: 96px; }
+@media (max-width: 900px) { .fort-commitment-card { padding: 28px; } .fort-commitments-grid { gap: 20px; } }
+@media (max-width: 767px) { .fort-commitments-grid { grid-template-columns: 1fr; max-width: 480px; } .fort-commitments-heading { margin-bottom: 32px; } }
+.fort-partnership { margin-top: 96px; padding-top: 80px; border-top: 1px solid #e2e8f0; scroll-margin-top: 112px; }
+.fort-partnership-intro { max-width: 760px; margin-bottom: 56px; }
+.fort-partnership-intro h2 { color: #0f172a; font-size: clamp(30px, 3.2vw, 42px); font-weight: 700; line-height: 1.2; margin-bottom: 20px; }
+.fort-partnership-intro>p { font-size: 17px; line-height: 1.8; margin: 0; }
+.fort-partnership-block { margin-bottom: 56px; }
+.fort-partnership .fort-partnership-section-title { color: #0f172a; font-size: 24px; font-weight: 650; line-height: 1.3; margin: 0 0 24px; }
+.fort-benefits-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.fort-benefit-card { padding: 28px; border: 1px solid #e2e8f0; border-radius: 16px; background: white; box-shadow: 0 6px 20px #0f172a05; }
+.fort-benefit-icon { width: 48px; height: 48px; display: grid; place-items: center; color: #2563eb; background: #eff6ff; border-radius: 12px; margin-bottom: 24px; }
+.fort-benefit-icon .icon { width: 24px; height: 24px; }
+.fort-partnership h4 { font-size: 18px; line-height: 1.4; font-weight: 650; color: #0f172a; margin: 0 0 12px; }
+.fort-benefit-card p, .fort-requirements-grid p { font-size: 15px; line-height: 1.8; margin: 0; }
+.fort-requirements-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; padding: 0; margin: 0; list-style: none; }
+.fort-requirements-grid>li { display: flex; align-items: flex-start; gap: 14px; }
+.fort-requirement-check { width: 28px; height: 28px; display: grid; place-items: center; border-radius: 50%; background: #dbeafe; color: #1d4ed8; flex-shrink: 0; }
+.fort-requirement-check .icon { width: 17px; height: 17px; }
+.fort-partnership-contact { display: flex; justify-content: space-between; align-items: center; gap: 40px; padding: 48px; border-radius: 24px; background: #0f172a; }
+.fort-partnership-contact>div { max-width: 640px; }
+.fort-partnership-contact h3 { font-size: 30px; color: white; line-height: 1.25; font-weight: 650; margin-bottom: 16px; }
+.fort-partnership-contact p { color: #cbd5e1; font-size: 16px; margin: 0; }
+.fort-partnership-contact>.button { flex-shrink: 0; text-align: center; }
+@media (max-width: 1023px) {
+  .fort-benefits-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .fort-partnership-contact { align-items: flex-start; flex-direction: column; gap: 28px; }
+}
+@media (max-width: 767px) {
+  .fort-partnership { margin-top: 64px; padding-top: 56px; }
+  .fort-partnership-intro { margin-bottom: 36px; }
+  .fort-partnership-intro>p { font-size: 16px; }
+  .fort-partnership-block { margin-bottom: 40px; }
+  .fort-partnership .fort-partnership-section-title { font-size: 22px; }
+  .fort-benefits-grid, .fort-requirements-grid { grid-template-columns: 1fr; gap: 20px; }
+  .fort-benefit-card { padding: 24px; }
+  .fort-benefit-icon { margin-bottom: 18px; }
+  .fort-partnership-contact { padding: 28px 24px; border-radius: 16px; }
+  .fort-partnership-contact h3 { font-size: 26px; }
+  .fort-partnership-contact>.button { width: 100%; white-space: normal; }
+}
+.reference-institutional-image { position: relative; }
+.reference-institutional-image>img { width: 100%; aspect-ratio: 1.5; object-fit: cover; border-radius: 16px; box-shadow: 0 25px 50px #0004; opacity: .9; }
+.reference-history { position: absolute; left: -24px; bottom: -24px; padding: 28px 32px; background: #2563eb; border-radius: 16px; box-shadow: 0 20px 25px #0002; }
+.reference-history strong { display: block; font-size: 36px; font-weight: 900; line-height: 1.2; margin-bottom: 4px; }
+.reference-history span { font-size: 14px; text-transform: uppercase; letter-spacing: .1em; color: #dbeafe; }
+
+.reference-footer.site-footer { background: #020617; padding-block: 80px 0; color: #cbd5e1; }
+.reference-footer .footer-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 48px; padding-block: 0 64px; }
+.reference-footer .footer-about { grid-column: auto; }
+.reference-footer .brand-footer { margin-bottom: 24px; }
+.reference-footer h2 { font-size: 18px; font-weight: 700; margin: 0 0 24px; }
+.reference-footer .footer-grid>div>p { font-size: 14px; color: #94a3b8; line-height: 1.65; margin-bottom: 16px; }
+.reference-footer .footer-grid>div>a:not(.brand) { font-size: 14px; margin-bottom: 12px; gap: 8px; }
+.reference-footer .footer-grid .icon { width: 16px; height: 16px; }
+.reference-socials { display: flex; gap: 16px; margin-top: 28px; }
+.reference-socials>a { width: 40px; height: 40px; display: grid; place-items: center; border-radius: 50%; background: #1e293b; color: white; }
+.reference-socials>a:hover { background: #2563eb; }
+.reference-footer-contact { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 16px; font-size: 14px; color: #94a3b8; }
+.reference-footer-contact>.icon { color: #3b82f6; width: 20px!important; height: 20px!important; margin-top: 4px; }
+.reference-footer-contact strong { display: block; color: #fff; font-weight: 500; margin-bottom: 2px; }
+.reference-footer-contact a { overflow-wrap: anywhere; }
+.reference-footer-blue { color: #60a5fa; }
+.reference-footer .footer-grid .button { border-radius: 8px; padding: 12px 16px; font-size: 14px!important; min-height: 48px; width: 100%; gap: 8px!important; margin: 0; }
+.reference-footer .footer-bottom { font-size: 12px; color: #64748b; border-top-color: #1e293b; padding-block: 32px 40px; }
+.reference-presentation .floating-contact { background: #2563eb; color: white; }
+
+@media (max-width: 1100px) {
+  .reference-header .header-inner { gap: 20px; }
+  .reference-header .main-nav { gap: 24px; }
+  .reference-inline-search input { width: 165px; }
+}
+@media (max-width: 1023px) {
+  .reference-inline-search { display: none; }
+  .reference-header .search-toggle { display: grid; }
+  .reference-hero h1 { font-size: 60px; }
+  .reference-presentation .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+  .reference-footer .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 767px) {
+  .reference-presentation .container { padding-inline: 24px; }
+  .reference-presentation .section { padding-block: 64px; }
+  .reference-header .header-inner { height: 80px; justify-content: space-between; }
+  .reference-header .brand, .reference-header .brand img { width: 126px; }
+  .reference-header .main-nav { display: none; position: absolute; top: 80px; inset-inline: 0; background: white; padding: 8px 24px 24px; border-top: 1px solid #f1f5f9; box-shadow: 0 8px 12px #0001; }
+  .reference-header .main-nav.is-open { display: flex; flex-direction: column; align-items: stretch; gap: 0; }
+  .reference-header .main-nav a { font-size: 16px; padding: 12px; border-radius: 8px; }
+  .reference-header .main-nav a:hover { background: #f8fafc; }
+  .reference-header .menu-toggle { display: grid; }
+  .reference-hero { min-height: 600px; height: 90svh; }
+  .reference-hero-content { margin-top: 24px; }
+  .reference-hero h1 { font-size: 42px; line-height: 1.2; }
+  .reference-hero-content>p { font-size: 18px; line-height: 1.5; margin-bottom: 32px; }
+  .reference-hero .button-row { gap: 14px; }
+  .reference-presentation .button { font-size: 14px; padding: 14px 24px; }
+  .reference-home .section-heading { flex-direction: column; align-items: flex-start; gap: 20px; margin-bottom: 36px; }
+  .reference-home .section-heading h2 { font-size: 30px; }
+  .reference-home .section-heading p { font-size: 16px; }
+  .reference-presentation .text-link { font-size: 14px; }
+  .reference-lines-grid { grid-template-columns: 1fr; grid-auto-rows: 320px; }
+  .reference-line, .reference-line-wide { grid-column: auto; }
+  .reference-line-content { bottom: 28px; left: 28px; right: 28px; }
+  .reference-line h3, .reference-line-wide h3 { font-size: 26px; }
+  .reference-line p, .reference-line-wide p { font-size: 14px; }
+  .reference-line:first-child .reference-line-content { right: 80px; }
+  .reference-line .round-arrow { width: 40px; height: 40px; right: 24px; bottom: 28px; }
+  .reference-products .section-heading { align-items: center; text-align: center; margin-bottom: 40px; }
+  .reference-presentation .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 18px; }
+  .reference-presentation .product-image { padding: 20px; }
+  .reference-presentation .product-info h3 { font-size: 14px; min-height: 60px; }
+  .reference-presentation .product-meta { font-size: 10px; }
+  .reference-presentation .product-detail { font-size: 12px; }
+  .reference-all-products { margin-top: 40px; }
+  .reference-institutional { padding-block: 64px 84px; }
+  .reference-institutional-grid { grid-template-columns: 1fr; gap: 40px; }
+  .reference-institutional h2 { font-size: 30px; }
+  .reference-institutional-copy>p { font-size: 16px; }
+  .reference-history { left: -8px; bottom: -20px; padding: 20px 24px; }
+  .reference-history span { font-size: 11px; }
+  .reference-footer.site-footer { padding-top: 64px; }
+  .reference-footer .footer-grid { gap: 32px; padding-bottom: 44px; }
+  .reference-footer h2 { font-size: 16px; }
+  .reference-footer .footer-grid>div>p, .reference-footer .footer-grid>div>a:not(.brand), .reference-footer-contact { font-size: 12px; }
+  .reference-footer .footer-bottom { font-size: 10px; }
+}
+@media (max-width: 639px) {
+  .reference-presentation .container { padding-inline: 16px; }
+  .reference-hero-content { padding-inline: 22px!important; }
+  .reference-hero h1 { font-size: 38px; }
+  .reference-hero .button-row { flex-direction: column; }
+  .reference-hero .button-row>.button { min-width: 245px; }
+  .reference-presentation .product-grid { grid-template-columns: 1fr; gap: 32px; }
+  .reference-presentation .product-image { padding: 32px; }
+  .reference-presentation .product-info h3 { font-size: 16px; min-height: 0; }
+  .reference-presentation .product-meta { font-size: 12px; }
+  .reference-presentation .product-detail { font-size: 16px; }
+  .reference-values { gap: 12px; }
+  .reference-values>div { padding: 14px; font-size: 12px; }
+  .reference-footer .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+  .reference-footer .footer-grid>div>p, .reference-footer .footer-grid>div>a:not(.brand), .reference-footer-contact { font-size: 14px; }
+  .reference-footer .footer-bottom { gap: 15px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reference-line>img, .reference-presentation .product-image img { transition: none; }
+}

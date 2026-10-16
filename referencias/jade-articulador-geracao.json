@@ -1,0 +1,13 @@
+{
+  "tool": "image_gen.imagegen",
+  "mode": "built-in",
+  "transparent_background": true,
+  "product_id": 28,
+  "media_id": 73,
+  "output": "wp-content/themes/fort-metais/assets/images/variacoes-jade/jade-articulador-ilustrativo.png",
+  "source": "wp-content/themes/fort-metais/assets/images/variacoes-jade/jade-arejador-original.png",
+  "accessory_reference": "C:/Users/fortm/AppData/Local/Temp/codex-clipboard-bc3e2be7-f108-42de-b7c8-2aaa23fc0ced.png",
+  "reference_status": "a confirmar, conforme solicitado pelo usuário",
+  "simulation": true,
+  "prompt": "Use case: precise-object-edit. Edit target image1 is the full chrome Fort Jade gooseneck kitchen faucet on transparent background. Supporting reference image2 shows ONLY the chrome ball-joint swivel articulator attachment: a small upper screw connector, a visible spherical neck joint, and a wider cylindrical nozzle lower body. Replace ONLY the small plain cylindrical aerator at the LEFT end of the faucet spout in image1 with that swivel articulator attachment. It screws onto the existing downward slanted spout tip, at physically plausible proportional scale (slightly longer and wider than the original nozzle), aligned initially in a neutral downward position. Preserve the exact entire gooseneck shape, arched pipe, height, position, round base, chrome valve body, handle with existing small Fort marking, perspective, polish and original product proportions. Do not redesign the faucet or handle. Preserve full original product framing and transparent background, portrait 5:6 aspect ratio around 1000x1200. Sharp photoreal catalog image of one complete faucet. No water, text, green background, circles, badges, added labels, added logos, props or extra parts. This is an illustrative product variant based on the user's accessory reference."
+}
