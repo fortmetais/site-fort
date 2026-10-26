@@ -50,7 +50,7 @@ O tema fica em `wp-content/themes/fort-metais` e o plugin em `wp-content/plugins
 
 Esta entrega é uma versão local com parte do catálogo. A importação dos demais produtos, a revisão das especificações pendentes, o cadastro dos representantes e a configuração de envio de e-mail são próximas etapas. O formulário atual registra os pedidos no painel; não envia e-mails.
 
-O repositório é `https://github.com/fortmetais/site-fort.git`. A branch `main` está vinculada à implantação automática em `https://lime-lion-509099.hostingersite.com/`. O Git atualiza o código; posts, produtos e imagens cadastrados pelo painel ficam no banco e nos uploads da respectiva instalação WordPress e não são transferidos pelo Git.
+O repositório é `https://github.com/fortmetais/site-fort.git`, branch `main`, e o site temporário está em `https://lime-lion-509099.hostingersite.com/`. A implantação automática na raiz foi desativada porque removia o core WordPress não versionado. Atualizações devem enviar apenas o tema e o plugin. Posts, produtos e imagens cadastrados pelo painel ficam no banco e nos uploads da respectiva instalação WordPress e não são transferidos pelo Git.
 
 Para conferir as páginas e os fluxos principais com o servidor aberto, execute `npm run check`.
 

@@ -1,6 +1,15 @@
 node_modules/
 .runtime/
 .hostinger/site.json
+# O core e a configuração pertencem à instalação WordPress, não ao tema/plugin.
+/wp-admin/
+/wp-includes/
+/index.php
+/wp-*.php
+/xmlrpc.php
+/.htaccess
+/license.txt
+/readme.html
 wp-content/database/
 wp-content/uploads/
 *.log
