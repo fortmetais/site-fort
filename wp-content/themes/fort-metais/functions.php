@@ -11,6 +11,9 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('fort-reference', get_template_directory_uri() . '/assets/reference.css', array('fort-style'), filemtime(get_template_directory() . '/assets/reference.css'));
     wp_enqueue_style('fort-languages', get_template_directory_uri() . '/assets/languages.css', array('fort-reference'), filemtime(get_template_directory() . '/assets/languages.css'));
     wp_enqueue_style('fort-whatsapp-widget', get_template_directory_uri() . '/assets/whatsapp-widget.css', array('fort-reference'), filemtime(get_template_directory() . '/assets/whatsapp-widget.css'));
+    if (is_home() || is_singular('post')) {
+        wp_enqueue_style('fort-news', get_template_directory_uri() . '/assets/news.css', array('fort-reference'), filemtime(get_template_directory() . '/assets/news.css'));
+    }
     if (is_post_type_archive('fort_cena') || is_singular('fort_cena')) {
         wp_enqueue_style('fort-environments', get_template_directory_uri() . '/assets/environments.css', array('fort-reference'), filemtime(get_template_directory() . '/assets/environments.css'));
     }
@@ -112,7 +115,7 @@ add_filter('posts_where', function ($where, $query) {
     return $where;
 }, 10, 2);
 add_action('wp_head', function () {
-    $description = is_singular('fort_produto') ? wp_strip_all_tags(get_the_excerpt()) : 'Conheça as linhas de metais sanitários Fort. Design e qualidade em torneiras para cozinha, banheiro e seus projetos.';
+    $description = is_singular(array('fort_produto', 'post')) ? wp_trim_words(wp_strip_all_tags(get_the_excerpt()), 32, '') : (is_home() ? 'Lançamentos, novidades e histórias que fazem parte da Fort Metais.' : 'Conheça as linhas de metais sanitários Fort. Design e qualidade em torneiras para cozinha, banheiro e seus projetos.');
     echo '<meta name="description" content="' . esc_attr($description) . '">' . "\n";
     echo '<meta name="theme-color" content="#2563eb">' . "\n";
 });

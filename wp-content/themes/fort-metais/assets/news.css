@@ -1,0 +1,105 @@
+/* Notícias da Fort: posts nativos, com a apresentação do catálogo. */
+.fort-news-listing .fort-news-intro { background: #f1f5f9; padding-bottom: 56px; }
+.fort-news-intro h1 { margin-bottom: 16px; }
+.fort-news-intro p { max-width: 660px; color: #64748b; font-size: 17px; line-height: 1.7; }
+.fort-news-listing .fort-news-content { padding-block: 56px 96px; }
+.fort-news-card { min-width: 0; overflow: hidden; background: #fff; border: 1px solid #e2e8f0; border-radius: 20px; }
+.fort-news-card-photo { display: block; position: relative; min-width: 0; overflow: hidden; background: #e2e8f0; aspect-ratio: 16 / 10; }
+.fort-news-card-photo > img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
+.fort-news-card-photo:hover > img { transform: scale(1.035); }
+.fort-news-card-photo:focus-visible { outline-offset: -5px; outline-color: #2563eb; }
+.fort-news-photo-fallback { position: relative; display: flex; width: 100%; height: 100%; padding: 30px; flex-direction: column; align-items: center; justify-content: center; gap: 20px; overflow: hidden; background: radial-gradient(ellipse at 95% 0%, #3762a5, transparent 68%), #152b4d; color: #fff; }
+.fort-news-photo-fallback > .icon { width: 56px; height: 56px; color: #7cc9a7; }
+.fort-news-photo-fallback > span { font-size: 14px; font-weight: 700; letter-spacing: .18em; }
+.fort-news-card-copy { min-width: 0; padding: 26px; }
+.fort-news-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 18px; margin-bottom: 16px; font-size: 12px; line-height: 1.5; overflow-wrap: anywhere; }
+.fort-news-meta > span { color: #2563eb; font-weight: 600; }
+.fort-news-meta time { color: #64748b; }
+.fort-news-card-copy h2, .fort-news-card-copy h3 { color: #0f172a; font-size: 23px; font-weight: 600; line-height: 1.35; margin-bottom: 14px; overflow-wrap: anywhere; }
+.fort-news-card-copy h2 a:hover, .fort-news-card-copy h3 a:hover { color: #2563eb; }
+.fort-news-card-copy > p { color: #64748b; font-size: 14px; line-height: 1.85; margin-bottom: 24px; }
+.fort-news-card .fort-news-read { font-size: 14px; }
+.fort-news-featured { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); align-items: stretch; border-radius: 24px; }
+.fort-news-featured > .fort-news-card-photo { aspect-ratio: auto; min-height: 340px; }
+.fort-news-featured > .fort-news-card-copy { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: 48px; }
+.fort-news-featured .fort-news-card-copy h2 { font-size: clamp(26px, 2.7vw, 38px); line-height: 1.2; margin-bottom: 20px; }
+.fort-news-featured .fort-news-card-copy > p { font-size: 16px; margin-bottom: 28px; }
+.fort-news-featured-badge { position: absolute; left: 24px; top: 24px; padding: 8px 13px; border-radius: 999px; background: #fff; color: #1d4ed8; font-size: 10px; font-weight: 700; letter-spacing: .1em; box-shadow: 0 4px 16px #0f172a12; }
+.fort-news-recent { margin-top: 64px; }
+.fort-news-section-heading { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px 24px; margin-bottom: 28px; }
+.fort-news-section-heading h2 { color: #0f172a; font-size: 28px; font-weight: 700; margin-bottom: 0; }
+.fort-news-section-heading p { color: #64748b; font-size: 13px; margin: 0; }
+.fort-news-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.fort-news-pagination { margin-top: 48px; }
+.fort-news-pagination ul { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; list-style: none; padding: 0; margin: 0; }
+.fort-news-pagination a.page-numbers, .fort-news-pagination span.page-numbers { display: flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding: 8px 15px; border-radius: 999px; border: 1px solid #cbd5e1; background: #fff; color: #334155; font-size: 14px; }
+.fort-news-pagination .current, .fort-news-pagination a:hover { color: #fff; border-color: #2563eb; background: #2563eb; }
+.fort-news-pagination .dots { border-color: transparent; background: transparent; }
+.fort-news-empty { max-width: 680px; margin: 16px auto 24px; text-align: center; padding: 48px 24px; }
+.fort-news-empty-icon { display: inline-flex; padding: 20px; margin-bottom: 26px; border-radius: 20px; background: #eaf1ff; color: #2563eb; }
+.fort-news-empty-icon .icon { width: 32px; height: 32px; }
+.fort-news-empty h2 { font-size: 34px; font-weight: 700; color: #0f172a; }
+.fort-news-empty p { font-size: 16px; line-height: 1.8; margin-bottom: 28px; }
+.fort-news-single .fort-news-article-intro { background: #f1f5f9; padding-bottom: 52px; }
+.fort-news-article-heading { max-width: 900px; }
+.fort-news-article-heading h1 { font-size: clamp(32px, 4vw, 54px); line-height: 1.15; overflow-wrap: anywhere; margin-bottom: 22px; }
+.fort-news-published { display: block; color: #64748b; font-size: 13px; }
+.fort-news-article-intro .fort-news-standfirst { font-size: 19px; line-height: 1.65; max-width: 800px; margin: 26px 0 0; }
+.fort-news-article-main { padding-top: 48px; padding-bottom: 64px; }
+.fort-news-cover { margin: 0 auto 44px; max-width: 1100px; }
+.fort-news-cover img { width: 100%; height: auto; border-radius: 22px; }
+.fort-news-cover figcaption, .fort-news-body figcaption { margin-top: 10px; font-size: 12px; line-height: 1.65; color: #64748b; text-align: center; }
+.fort-news-body { max-width: 800px; margin-inline: auto; color: #334155; font-size: 16px; line-height: 1.9; overflow-wrap: anywhere; }
+.fort-news-body.prose p, .fort-news-body li { font-size: 16px; line-height: 1.9; color: #475569; }
+.fort-news-body > :first-child { margin-top: 0; }
+.fort-news-body h2 { margin: 40px 0 18px; font-size: 30px; font-weight: 700; color: #0f172a; }
+.fort-news-body h3 { margin: 32px 0 16px; font-size: 23px; font-weight: 600; color: #0f172a; }
+.fort-news-body ul, .fort-news-body ol { padding-left: 24px; }
+.fort-news-body li + li { margin-top: 8px; }
+.fort-news-body a { color: #1d4ed8; text-decoration: underline; text-underline-offset: 3px; }
+.fort-news-body a.button { color: #fff; text-decoration: none; }
+.fort-news-body figure { margin-inline: 0; }
+.fort-news-body img { height: auto; border-radius: 14px; }
+.fort-news-body iframe, .fort-news-body video { max-width: 100%; }
+.fort-news-body .wp-block-embed__wrapper { overflow: hidden; }
+.fort-news-body table { border-collapse: collapse; display: block; max-width: 100%; overflow-x: auto; }
+.fort-news-body th, .fort-news-body td { border: 1px solid #cbd5e1; padding: 10px 14px; }
+.fort-news-body blockquote { margin: 30px 0; border-left: 3px solid #7cc9a7; padding: 12px 24px; background: #f1f5f9; }
+.fort-news-content-pages { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 32px; }
+.fort-news-back { max-width: 800px; margin: 40px auto 0; padding-top: 24px; border-top: 1px solid #e2e8f0; }
+.fort-news-back .text-link { white-space: normal; }
+.fort-news-related { padding-bottom: 96px; }
+.fort-news-related .fort-news-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 1000px) {
+    .fort-news-featured > .fort-news-card-copy { padding: 32px; }
+    .fort-news-featured > .fort-news-card-photo { min-height: 300px; }
+    .fort-news-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+}
+@media (max-width: 680px) {
+    .fort-news-listing .fort-news-intro { padding-bottom: 38px; }
+    .fort-news-listing .fort-news-content { padding-top: 32px; padding-bottom: 64px; }
+    .fort-news-featured { grid-template-columns: minmax(0, 1fr); }
+    .fort-news-featured > .fort-news-card-photo { aspect-ratio: 16 / 10; min-height: 0; }
+    .fort-news-featured > .fort-news-card-copy { padding: 28px 24px; }
+    .fort-news-featured .fort-news-card-copy h2 { font-size: 28px; }
+    .fort-news-featured .fort-news-card-copy > p { font-size: 15px; }
+    .fort-news-featured-badge { left: 16px; top: 16px; }
+    .fort-news-recent { margin-top: 44px; }
+    .fort-news-grid, .fort-news-related .fort-news-grid { grid-template-columns: minmax(0, 1fr); }
+    .fort-news-section-heading h2 { font-size: 25px; }
+    .fort-news-card-copy { padding: 24px; }
+    .fort-news-single .fort-news-article-intro { padding-bottom: 36px; }
+    .fort-news-article-intro .fort-news-standfirst { font-size: 17px; }
+    .fort-news-article-main { padding-top: 32px; padding-bottom: 48px; }
+    .fort-news-cover { margin-bottom: 30px; }
+    .fort-news-cover img { border-radius: 16px; }
+    .fort-news-body.prose p, .fort-news-body li { font-size: 16px; }
+    .fort-news-body h2 { font-size: 26px; }
+    .fort-news-body h3 { font-size: 22px; }
+    .fort-news-related { padding-bottom: 64px; }
+    .fort-news-empty { padding-inline: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .fort-news-card-photo > img { transition: none; }
+    .fort-news-card-photo:hover > img { transform: none; }
+}

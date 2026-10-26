@@ -1,5 +1,6 @@
 node_modules/
 .runtime/
+.hostinger/site.json
 wp-content/database/
 wp-content/uploads/
 *.log

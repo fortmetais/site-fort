@@ -42,7 +42,7 @@
   updateLanguageLinks();
   document.querySelectorAll('[data-fort-language]').forEach(link => link.addEventListener('click', updateLanguageLinks));
   window.addEventListener('hashchange', updateLanguageLinks);
-  const wideScreen = window.matchMedia('(min-width: 768px)');
+  const wideScreen = window.matchMedia('(min-width: 1024px)');
   wideScreen.addEventListener('change', () => { if (wideScreen.matches) closeMenu(); });
   document.querySelector('.contact-form')?.addEventListener('submit', event => {
     const button = event.currentTarget.querySelector('button[type="submit"]');

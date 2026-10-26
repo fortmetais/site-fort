@@ -11,6 +11,7 @@
         <a href="<?php echo esc_url(home_url('/#institucional')); ?>">Institucional</a>
         <a href="<?php echo esc_url(fort_catalog_url()); ?>" <?php if (is_post_type_archive('fort_produto') || is_singular('fort_produto')) echo 'aria-current="page"'; ?>>Produtos</a>
         <a href="<?php echo esc_url(home_url('/ambientes/')); ?>" <?php if (is_post_type_archive('fort_cena') || is_singular('fort_cena')) echo 'aria-current="page"'; ?>>Ambientes</a>
+        <a href="<?php echo esc_url(home_url('/noticias/')); ?>" <?php if (is_home() || is_singular('post')) echo 'aria-current="page"'; ?>>Notícias</a>
         <a href="<?php echo esc_url(home_url('/representantes/')); ?>">Representantes</a>
     </nav>
     <div class="header-actions">

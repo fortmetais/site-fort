@@ -14,5 +14,13 @@
 .reference-header .header-inner { gap: 24px; }
 .reference-header .header-actions { gap: 10px; }
 @media (min-width: 768px) and (max-width: 1279px) { .reference-header .reference-inline-search { display: none; } .reference-header .search-toggle { display: grid; } .reference-header .main-nav { gap: 22px; } }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .reference-header .header-inner { justify-content: space-between; }
+  .reference-header .main-nav { display: none; position: absolute; top: 80px; inset-inline: 0; background: white; padding: 8px 24px 24px; border-top: 1px solid #f1f5f9; box-shadow: 0 8px 12px #0001; }
+  .reference-header .main-nav.is-open { display: flex; flex-direction: column; align-items: stretch; gap: 0; }
+  .reference-header .main-nav a { font-size: 16px; padding: 12px; border-radius: 8px; }
+  .reference-header .main-nav a:hover { background: #f8fafc; }
+  .reference-header .menu-toggle { display: grid; }
+}
 @media (max-width: 767px) { .reference-header .header-actions { gap: 2px; } .reference-header .header-inner { gap: 10px; } .fort-language-switcher summary { padding-inline: 7px; gap: 4px; font-size: 11px; } .fort-language-switcher ul { right: -62px; } }
 @media (max-width: 359px) { .reference-header .brand, .reference-header .brand img { width: 108px; } .fort-language-switcher summary>.icon:first-child { display: none; } }

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Fort Catálogo
  * Description: Produtos, classificações, representantes e solicitações de orçamento da Fort Metais.
- * Version: 0.1.0
+ * Version: 0.2.0
  * Requires PHP: 8.1
  * Text Domain: fort-catalogo
  */
@@ -13,6 +13,7 @@ require_once __DIR__ . '/includes/product-finishes.php';
 require_once __DIR__ . '/includes/product-versions.php';
 require_once __DIR__ . '/includes/i18n.php';
 require_once __DIR__ . '/includes/i18n-admin.php';
+require_once __DIR__ . '/includes/news.php';
 
 function fort_register_catalog() {
     register_post_type('fort_produto', array(

@@ -2,6 +2,16 @@
 
 O projeto tem duas partes que precisam acompanhar a publicação: o código do tema/plugin e os dados administrados pelo WordPress. O GitHub guarda a primeira parte; o banco e a biblioteca de mídia seguem em um pacote privado de migração.
 
+## Instalação atual e próximas atualizações
+
+O site temporário está em **https://lime-lion-509099.hostingersite.com/**. A migração inicial foi concluída em 16/10/2026 por um importador privado testado, que remapeou os vínculos entre conteúdos e preservou a conta administrativa da hospedagem. O utilitário foi removido após a conferência.
+
+O repositório `fortmetais/site-fort`, branch `main`, possui implantação automática ativa nesse domínio. Um push atualiza o código do tema e do plugin. Produtos, posts e mídias cadastrados na Hostinger continuam no banco e nos uploads da hospedagem; não reaplique o banco local para atualizar o layout.
+
+Na versão 0.2.0, o plugin prepara a página/categoria Notícias e traz a notícia histórica confirmada da Linha Safira uma única vez, sem substituir edições posteriores. Novas matérias são criadas pelo WordPress, conforme [o guia de publicação](COMO_PUBLICAR_NOTICIAS.md).
+
+As instruções de migração abaixo são referência para preparar uma nova instalação completa.
+
 ## Repositório
 
 - HTTPS: `https://github.com/fortmetais/site-fort.git`
@@ -11,7 +21,7 @@ O repositório deve conter o tema `wp-content/themes/fort-metais`, o plugin `wp-
 
 Fotos que fazem parte do tema, incluindo o personagem do atendimento, são recursos do código. Imagens e PDFs enviados pela biblioteca Mídia ficam nos uploads do WordPress e precisam acompanhar a migração separadamente.
 
-Enviar alterações para o GitHub não atualiza automaticamente a hospedagem. A primeira publicação instala o tema/plugin e importa os dados; atualizações posteriores de código devem preservar o banco e os uploads que a equipe estiver utilizando na hospedagem.
+No domínio temporário atual, os pushes para `main` acionam a implantação automática. Em outra instalação sem esse vínculo, o envio ao GitHub sozinho não publica o site. Atualizações de código devem preservar o banco e os uploads utilizados pela equipe.
 
 ## O que já existe e deve ser preservado
 

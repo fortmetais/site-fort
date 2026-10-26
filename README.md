@@ -23,6 +23,7 @@ Em uma nova cópia do projeto, instale antes as dependências com `npm ci`. O am
 - Página inicial adaptada à identidade Fort Metais, com versões para celular e computador.
 - Doze produtos cadastrados, com linhas, ambientes, acabamentos e opções de cor ou bica em modelos de teste.
 - Cinco ambientes com marcadores associados aos produtos presentes nas fotos.
+- Notícias em `/noticias/`, com destaque, paginação e matérias cadastradas em **Posts** na categoria **Notícias**.
 - Português (BR), inglês e espanhol, com revisão das traduções pelo painel.
 - Catálogos PDF em português e inglês, selecionados conforme o idioma do site.
 - Pop-up de atendimento com o personagem da Fort e acesso ao WhatsApp.
@@ -36,6 +37,7 @@ Em uma nova cópia do projeto, instale antes as dependências com `npm ci`. O am
 
 - [Como usar e manter o ambiente local](docs/COMO_USAR_LOCAL.md)
 - [GitHub, dados e publicação em domínio temporário](docs/PUBLICACAO.md)
+- [Passo a passo para publicar notícias](docs/COMO_PUBLICAR_NOTICIAS.md)
 - [Planejamento do projeto](docs/PLANEJAMENTO.md)
 - [Auditoria inicial](docs/AUDITORIA_INICIAL.md)
 - [Prévia da página inicial no visual do HTML](docs/previews/inicio-referencia.jpg)
@@ -48,9 +50,11 @@ O tema fica em `wp-content/themes/fort-metais` e o plugin em `wp-content/plugins
 
 Esta entrega é uma versão local com parte do catálogo. A importação dos demais produtos, a revisão das especificações pendentes, o cadastro dos representantes e a configuração de envio de e-mail são próximas etapas. O formulário atual registra os pedidos no painel; não envia e-mails.
 
-O repositório de destino é `https://github.com/fortmetais/site-fort.git`. O banco local e os uploads ficam fora do Git; precisam acompanhar a publicação em um pacote privado, com conversão SQLite → MySQL validada antes da migração para a Hostinger. Enviar o código ao GitHub não transfere os cadastros nem publica automaticamente o site.
+O repositório é `https://github.com/fortmetais/site-fort.git`. A branch `main` está vinculada à implantação automática em `https://lime-lion-509099.hostingersite.com/`. O Git atualiza o código; posts, produtos e imagens cadastrados pelo painel ficam no banco e nos uploads da respectiva instalação WordPress e não são transferidos pelo Git.
 
 Para conferir as páginas e os fluxos principais com o servidor aberto, execute `npm run check`.
+
+Para conferir a seção de notícias, execute `npm run check:news`. A versão 0.2.0 prepara a página e a categoria Notícias uma única vez, preserva as edições posteriores e mantém os posts de exemplo fora dessa seção. A integração com feeds sociais permanece para uma próxima etapa.
 
 ## Apresentação baseada no HTML
 
